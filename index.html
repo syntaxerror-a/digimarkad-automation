@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DIGIMARKAD – Automation Platform</title>
+  <link rel="icon" href="public/favicon.ico" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+  <div id="root"></div>
+  <!-- React + Babel for zero-build deployment on GitHub Pages -->
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+  <!-- Utility modules -->
+  <script type="text/babel" src="src/utils/api.js"       data-type="module"></script>
+  <script type="text/babel" src="src/utils/helpers.js"   data-type="module"></script>
+
+  <!-- UI components -->
+  <script type="text/babel" src="src/components/Sidebar.jsx"   data-type="module"></script>
+  <script type="text/babel" src="src/components/TopBar.jsx"    data-type="module"></script>
+  <script type="text/babel" src="src/components/AIOutput.jsx"  data-type="module"></script>
+  <script type="text/babel" src="src/components/DataTable.jsx" data-type="module"></script>
+
+  <!-- Feature modules -->
+  <script type="text/babel" src="src/modules/Dashboard.jsx"    data-type="module"></script>
+  <script type="text/babel" src="src/modules/Content.jsx"      data-type="module"></script>
+  <script type="text/babel" src="src/modules/Social.jsx"       data-type="module"></script>
+  <script type="text/babel" src="src/modules/SEO.jsx"          data-type="module"></script>
+  <script type="text/babel" src="src/modules/Leads.jsx"        data-type="module"></script>
+  <script type="text/babel" src="src/modules/Email.jsx"        data-type="module"></script>
+  <script type="text/babel" src="src/modules/Analytics.jsx"    data-type="module"></script>
+  <script type="text/babel" src="src/modules/Clients.jsx"      data-type="module"></script>
+  <script type="text/babel" src="src/modules/Settings.jsx"     data-type="module"></script>
+
+  <!-- App shell – must load last -->
+  <script type="text/babel" src="src/App.jsx" data-type="module"></script>
+</body>
+</html>
